@@ -9,8 +9,8 @@ function showEducationSection(){
     const skillButton=document.querySelector(".Skills-button");
     const educationButton=document.querySelector(".Education-button");
     skillButton.style.color='white';
-    educationButton.style.color='rebeccapurple';
-    educationButton.style.borderBottom = "2px solid rebeccapurple";
+    educationButton.style.color='#7C93C3';
+    educationButton.style.borderBottom = "2px solid #7C93C3";
 
     const skillSection=document.querySelector(".skills");
     const educationSection=document.querySelector(".Education");
@@ -23,12 +23,12 @@ function showSkillSection(){
     const educationButton=document.querySelector(".Education-button");
     educationButton.style.color='white';
     educationButton.style.borderBottom = "none";
-    skillButton.style.color='rebeccapurple';
+    skillButton.style.color='#7C93C3';
 
     const skillSection=document.querySelector(".skills");
     const educationSection=document.querySelector(".Education");
     educationSection.style.display= 'none'
     skillSection.style.display='flex'
-    skillButton.style.borderBottom = "2px solid rebeccapurple";
+    skillButton.style.borderBottom = "2px solid #7C93C3";
 
 }

@@ -27,7 +27,7 @@ body {
 .nav-container h2 {
   cursor: default;
   background-color: #122131;
-  color: #F7EFE5;
+  color: #f7efe5;
   padding: 7px;
   border-radius: 7px;
   user-select: none;
@@ -36,7 +36,7 @@ nav {
   display: flex;
   gap: 2.5rem;
 }
-a {
+nav a {
   text-decoration: none;
   color: white;
   position: relative;
@@ -52,7 +52,7 @@ nav a::after {
   height: 5px;
   transition: 0.7s;
 }
-a:hover::after {
+nav a:hover::after {
   width: 100%;
 }
 .menu-icon {
@@ -100,19 +100,20 @@ a:hover::after {
   object-fit: cover;
   border-radius: 50%;
 }
-.details button {
+.details .resumeButton {
   max-width: 12em;
   font-size: 15px;
-  padding: 12px 0;
+  padding: 15px;
   transition: all 0.7s;
   border-radius: 10px;
-  border: none;
-  outline: none;
-  background-color:#F7EFE5;
+  background-color: #f7efe5;
   font-weight: 500;
+  text-decoration: none;
+  color: black;
+  text-align: center;
 }
-.details button:hover {
-  background-color: #294769;
+.details .resumeButton:hover {
+  background-color: #295f98;
 
   transform: translateY(-5px);
   cursor: pointer;
@@ -134,7 +135,7 @@ a:hover::after {
   border-radius: 20%;
 }
 .about-image div {
-  width: 80%;
+  width: 70%;
   margin-top: 2em;
   text-align: justify;
 }
@@ -145,11 +146,12 @@ a:hover::after {
 }
 ul {
   list-style: inside;
-  list-style-type: "-> ";
+  list-style-type: "◉ ";
+  padding-left: 10px;
 }
 li {
   margin-bottom: 1.5rem;
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
 .Skills-button,
 .Education-button {
@@ -264,11 +266,12 @@ li {
   display: flex;
   align-items: center;
   font-size: 25px;
+  gap: 20px;
 }
 .column1 div i {
-  margin-right: 20px;
   font-size: 40px;
   overflow: hidden;
+  color: white;
 }
 .links-container i,
 .links-container img:hover {
@@ -295,11 +298,11 @@ form textarea {
   padding: 10px;
   border-radius: 10px;
   resize: none;
-  border: 3px solid rgb(20, 20, 122);
+  border: 3px solid #7c93c3;
 }
 form button {
   padding: 10px 20px;
-  border: 3px solid rgb(20, 20, 122);
+  border: 3px solid #7c93c3;
   border-radius: 10px;
   margin: 2em;
 }
@@ -307,6 +310,12 @@ form button:hover {
   background-color: #b23434;
   cursor: pointer;
   animation: 1.3s ease-in-out;
+}
+footer{
+  text-align: center;
+  padding: 0.4rem;
+  font-weight: 600;
+  background-color: #0c4480;
 }
 @media (max-width: 950px) {
   .home-image {
@@ -399,5 +408,8 @@ form button:hover {
   }
   .about-detail-container {
     min-width: 280px;
+  }
+  footer{
+    font-size: 13px;
   }
 }
