@@ -237,15 +237,15 @@ li {
   display: flex;
   gap: 2rem;
 }
-.btn-container button {
-  padding: 15px 25px;
+.btn-container a {
+  padding: 10px 25px;
   font-weight: 700;
   border-radius: 20px;
-  border: none;
-  outline: none;
-}
-.btn-container button:hover {
-  cursor: pointer;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  font-size: small;
 }
 #Contact {
   display: flex;
