@@ -247,6 +247,9 @@ li {
   text-align: center;
   font-size: small;
 }
+.btn-container a:hover {
+  color: #3c304f;
+}
 #Contact {
   display: flex;
   flex-direction: column;
@@ -273,9 +276,10 @@ li {
   overflow: hidden;
   color: white;
 }
-.links-container i,
+.links-container i:hover,
 .links-container img:hover {
   cursor: pointer;
+  transform: scale(0.9);
 }
 .links-container {
   height: 5em;
@@ -298,11 +302,11 @@ form textarea {
   padding: 10px;
   border-radius: 10px;
   resize: none;
-  border: 3px solid #7c93c3;
+  border: 2px solid #7c93c3;
 }
 form button {
   padding: 10px 20px;
-  border: 3px solid #7c93c3;
+  border: none;
   border-radius: 10px;
   margin: 2em;
 }
@@ -311,7 +315,7 @@ form button:hover {
   cursor: pointer;
   animation: 1.3s ease-in-out;
 }
-footer{
+footer {
   text-align: center;
   padding: 0.4rem;
   font-weight: 600;
@@ -409,7 +413,7 @@ footer{
   .about-detail-container {
     min-width: 280px;
   }
-  footer{
+  footer {
     font-size: 13px;
   }
 }
