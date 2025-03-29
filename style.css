@@ -203,6 +203,9 @@ li {
   align-items: center;
   padding: 3rem 3rem;
 }
+#Projects > h1 > a{
+  color: #0366d6;
+}
 .project-details {
   padding: 10px 10px;
   display: flex;
